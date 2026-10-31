@@ -191,7 +191,6 @@ For more details, see:
 
 **Team Name:** Hermes Hodios
 
-**Team Members:** [Add registered team member names]
 
 ## A Note About the Project
 
