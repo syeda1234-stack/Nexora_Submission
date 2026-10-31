@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: nexora-ai
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
+      - key: OLLAMA_API_KEY
+        sync: false
+      - key: OLLAMA_MODEL
+        value: gpt-oss:120b
+      - key: NEXORA_AI_PROVIDER
+        value: auto
+      - key: PYTHON_VERSION
+        value: 3.12.3

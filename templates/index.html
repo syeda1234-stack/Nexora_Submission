@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nexora | Cross-Border Finance Agent</title>
+  <meta name="description" content="Nexora helps international students plan budgets and understand cross-border study costs."><meta name="theme-color" content="#101827">
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#top"><span class="brand-mark">N</span><span>NEXORA AI<small>Cross-Border Finance Agent</small></span></a>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="active" href="#top"><span>⌂</span> Overview</a>
+      <a href="#planner"><span>▣</span> Wallet &amp; Cards</a>
+      <a href="#wallet-extras"><span>＋</span> Card &amp; Receipt Demo</a>
+      <a href="#remittance-module"><span>⇄</span> Global Remittance</a>
+      <a href="#compliance-module"><span>✓</span> Compliance &amp; Analytics</a>
+      <a href="#mindspace-module"><span>♡</span> MindSpace</a>
+      <a href="#academic-module"><span>✦</span> Academic Rewards</a>
+      <a href="#smart-mega-hub"><span>▣</span> Smart Mega Hub</a>
+      <a href="#converter"><span>＄</span> Currency Rates</a>
+      <a href="#agent-workflows"><span>⇄</span> Transfer &amp; Activity Log</a>
+      <a href="#assistant"><span>▧</span> AI Assistant</a>
+      <a href="#security-note"><span>⚙</span> Security &amp; Settings</a>
+    </nav>
+    <a class="security-card" href="#security-note"><span class="security-icon">♢</span><span><strong>Privacy-first demo</strong><small>No bank connection or real transfers.</small></span><span class="security-arrow">›</span></a>
+  </aside>
+  <header class="topbar">
+    <div class="top-search"><span>⌕</span><input id="global-search" type="search" placeholder="Ask Nexora anything... (e.g., budget plan, exchange rate, transfer tips)" aria-label="Search Nexora"><button id="global-search-button" type="button" aria-label="Go to AI assistant">↵</button></div>
+    <div class="topbar-actions"><span class="globe-icon">◎</span><span class="language-label" aria-label="Interface language">English</span><span class="profile-avatar">S</span></div>
+  </header>
+  <main id="top">
+    <section class="dashboard-welcome">
+      <div><h1>Good evening, <span>there</span> <b class="sparkle">✦</b></h1><p>Smarter finance. A closer tomorrow.</p></div>
+      <span class="live-pill"><i></i> Live Rates · Demo AI Mode</span>
+    </section>
+    <section class="dashboard-shortcuts" aria-label="Quick actions">
+      <a class="shortcut-card" href="#planner"><span class="shortcut-icon purple">▣</span><h3>Budget Planner</h3><p>Create a personalized plan and track your finances.</p><b>↗</b></a>
+      <a class="shortcut-card" href="#agent-workflows"><span class="shortcut-icon teal">⇄</span><h3>Transfer Estimator</h3><p>Estimate fees, recipient amount and total cost.</p><b>↗</b></a>
+      <a class="shortcut-card" href="#converter"><span class="shortcut-icon purple">＄</span><h3>Currency Rates</h3><p>Check reference rates for global currencies.</p><b>↗</b></a>
+      <a class="shortcut-card" href="#assistant"><span class="shortcut-icon purple">▧</span><h3>AI Assistant</h3><p>Get instant guidance for cross-border finance.</p><b>↗</b></a>
+    </section>
+    <section class="dashboard-overview">
+      <div class="panel overview-panel"><div class="panel-title"><span class="panel-icon">▥</span><div><h3>Quick Overview</h3><p>Your financial snapshot · illustrative starter values</p></div></div>
+        <div class="overview-metrics"><article><small>◉ &nbsp; Total Income</small><strong id="overview-income">৳ 45,000</strong><span class="metric-up">↗ Monthly funds</span></article><article><small>♧ &nbsp; Total Expenses</small><strong id="overview-expenses">৳ 32,500</strong><span class="metric-purple">↓ Planned costs</span></article><article><small>⌁ &nbsp; Remaining Balance</small><strong id="overview-remaining">৳ 12,500</strong><span class="metric-muted">After expenses</span></article><article><small>◷ &nbsp; Last Updated</small><strong class="updated-value">Just now</strong><span class="metric-muted">Local preview</span></article></div>
+      </div>
+      <div class="panel recent-panel"><div class="panel-title"><span class="panel-icon lavender">◷</span><div><h3>Recent Activity</h3><p>Your latest actions</p></div></div><div class="activity-list"><div><span class="activity-icon teal">▣</span><span><strong>Budget plan ready</strong><small>Update it with your own figures</small></span><b>›</b></div><div><span class="activity-icon purple">◉</span><span><strong>Currency rates</strong><small>Fetch a current reference rate</small></span><b>›</b></div><div><span class="activity-icon blue">⇄</span><span><strong>Transfer estimate</strong><small>Compare a hypothetical offer</small></span><b>›</b></div><div><span class="activity-icon purple">▧</span><span><strong>AI assistant</strong><small>Ask for student finance guidance</small></span><b>›</b></div></div></div>
+    </section>
+
+    <section class="module-hub" aria-labelledby="module-hub-title">
+      <div class="section-heading"><div><div class="eyebrow">YOUR STUDENT FINANCE SPACE</div><h2 id="module-hub-title">Five modules. One clearer plan.</h2><p>Built around cross-border student life, with honest demo boundaries.</p></div><span class="step-label">NEXORA WORKSPACE</span></div>
+      <div class="module-grid">
+        <a class="module-card module-wallet" href="#planner"><span class="module-icon">▣</span><span class="module-label">CORE MODULE</span><h3>Wallet &amp; Cards</h3><p>Budget, weekly/monthly spending view and emergency-fund planning.</p><span class="module-link">Open wallet <b>↗</b></span></a>
+        <a class="module-card module-remit" href="#remittance-module"><span class="module-icon">⇄</span><span class="module-label">CORE MODULE</span><h3>Global Remittance</h3><p>Reference rates, transfer-cost previews, dates and reminders.</p><span class="module-link">Explore transfers <b>↗</b></span></a>
+        <a class="module-card module-compliance" href="#compliance-module"><span class="module-icon">✓</span><span class="module-label">CORE MODULE</span><h3>Compliance &amp; Analytics</h3><p>Official-source checklist and overspending warning based on your budget.</p><span class="module-link">Review checklist <b>↗</b></span></a>
+        <a class="module-card module-mind" href="#mindspace-module"><span class="module-icon">♡</span><span class="module-label">STUDENT WELLBEING</span><h3>MindSpace</h3><p>Private, optional mood check-ins and simple wellbeing activities.</p><span class="module-link">Check in <b>↗</b></span></a>
+        <a class="module-card module-academic" href="#academic-module"><span class="module-icon">✦</span><span class="module-label">STUDENT OPPORTUNITIES</span><h3>Academic Rewards</h3><p>Track CGPA and prepare a scholarship or reward eligibility checklist.</p><span class="module-link">Explore rewards <b>↗</b></span></a>
+      </div>
+    </section>
+
+    <section class="section" id="planner">
+      <div class="section-heading"><div><div class="eyebrow">YOUR MONEY, IN CONTEXT</div><h2><span data-i18n="plannerTitle">Build your monthly plan</span></h2><p><span data-i18n="plannerCopy">Enter estimates in one currency and see what remains after expenses.</span></p></div><span class="step-label">01 / PLANNER</span></div>
+      <div class="planner-grid">
+        <form class="panel form-panel" id="budget-form">
+          <div class="panel-title"><span class="panel-icon">▦</span><div><h3><span data-i18n="monthlyBudget">Monthly budget</span></h3><p><span data-i18n="ownEstimates">Use your own estimates</span></p></div></div>
+          <div class="field-row"><label for="currency">Budget currency</label><select id="currency"><option value="BDT">BDT — Bangladeshi Taka</option><option value="EUR">EUR — Euro</option><option value="USD">USD — US Dollar</option><option value="GBP">GBP — British Pound</option><option value="CNY">CNY — Chinese Yuan</option></select></div>
+          <div class="field-row"><label for="income">Monthly income / available funds</label><div class="input-wrap"><span id="income-symbol">৳</span><input id="income" type="number" min="0" step="0.01" value="45000" required></div></div>
+          <div class="expense-fields">
+            <div class="field-row"><label for="tuition">Tuition set aside monthly</label><div class="input-wrap"><span class="currency-symbol">৳</span><input id="tuition" type="number" min="0" step="0.01" value="10000"></div></div>
+            <div class="field-row"><label for="housing">Accommodation</label><div class="input-wrap"><span class="currency-symbol">৳</span><input id="housing" type="number" min="0" step="0.01" value="12000"></div></div>
+            <div class="field-row"><label for="food">Food & groceries</label><div class="input-wrap"><span class="currency-symbol">৳</span><input id="food" type="number" min="0" step="0.01" value="6500"></div></div>
+            <div class="field-row"><label for="transport">Transport</label><div class="input-wrap"><span class="currency-symbol">৳</span><input id="transport" type="number" min="0" step="0.01" value="2500"></div></div>
+            <div class="field-row"><label for="other">Other expenses</label><div class="input-wrap"><span class="currency-symbol">৳</span><input id="other" type="number" min="0" step="0.01" value="1500"></div></div>
+          </div>
+          <button class="button primary full" type="submit"><span data-i18n="updatePlan">Update my plan</span> <span>→</span></button>
+          <p class="small-note">Your entries are used for calculations and are not saved to an account.</p>
+        </form>
+        <div class="results-column">
+          <div class="result-card balance-card"><div class="result-top"><span>ESTIMATED REMAINING BALANCE</span><span class="result-symbol">↗</span></div><div class="big-number" id="remaining">৳ 12,500</div><p id="balance-caption">You have funds remaining after the expenses entered.</p><div class="balance-track"><span id="balance-track-fill"></span></div><div class="track-labels"><span>Expenses <b id="expense-percent">72%</b></span><span>Remaining <b id="remaining-percent">28%</b></span></div></div>
+          <div class="panel breakdown-panel"><div class="panel-title"><span class="panel-icon lavender">◔</span><div><h3>Where your money goes</h3><p>Based on the expenses you entered</p></div></div><div id="breakdown" class="breakdown"></div><div class="breakdown-total"><span>Total monthly expenses</span><strong id="total-expenses">৳ 32,500</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="wallet-extras">
+      <div class="section-heading"><div><div class="eyebrow">WALLET EXTENSIONS · SIMULATED</div><h2>Student FinTech Card</h2><p>Illustrative wallet balance, simulated history, emergency-loan preview and receipt-upload demo.</p></div><span class="step-label">WALLET +</span></div>
+      <div class="feature-grid wallet-extra-grid">
+        <article class="panel feature-panel"><div class="wallet-balance"><span>SIMULATED CARD BALANCE</span><strong>$450.00</strong><small>Student FinTech Card · Demo account only</small></div><h3 class="subhead">Recent transactions</h3><div class="transaction-list"><div><span class="transaction-dot expense">−</span><span><b>Campus café</b><small>Today · Food</small></span><strong>−$8.50</strong></div><div><span class="transaction-dot income">+</span><span><b>Monthly allowance</b><small>Yesterday · Funds</small></span><strong>+$250.00</strong></div><div><span class="transaction-dot expense">−</span><span><b>Study supplies</b><small>Oct 14 · Education</small></span><strong>−$24.99</strong></div></div><p class="small-note">These are sample transactions, not bank data.</p></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">↗</span><div><h3>1-Click Emergency Loan</h3><p>Preview a hypothetical $100 emergency advance.</p></div></div><div class="loan-limit"><span>Demo limit</span><strong>$100.00</strong></div><button class="button primary full" id="emergency-loan" type="button">Preview emergency loan →</button><div id="loan-result" class="local-result" aria-live="polite">No loan requested. This demo cannot lend money.</div><p class="small-note">A 1% illustrative processing fee is shown only for the simulation.</p><div class="field-row receipt-upload"><label for="receipt-file">AI OCR Receipt Scanner simulation</label><input id="receipt-file" type="file" accept="image/*,.pdf"><button class="button secondary full" id="scan-receipt" type="button">Analyze uploaded receipt (demo)</button><div id="receipt-result" class="local-result" aria-live="polite">Upload an image or PDF to simulate receipt analysis.</div></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="converter">
+      <div class="section-heading"><div><div class="eyebrow">CROSS-BORDER COSTS</div><h2><span data-i18n="currencyTitle">Currency calculator</span></h2><p>Try a rate from a trusted provider. Fetch a daily reference rate or enter a rate manually. Provider fees may differ.</p></div><span class="step-label">02 / CONVERT</span></div>
+      <div class="panel converter-panel"><div class="convert-field"><label for="amount">Amount</label><input id="amount" type="number" min="0" step="0.01" value="1000"></div><div class="convert-field"><label for="from-currency">From</label><select id="from-currency"><option>BDT</option><option>EUR</option><option>USD</option><option>GBP</option><option>CNY</option></select></div><button id="swap-currencies" class="swap-button" type="button" aria-label="Swap currencies">⇄</button><div class="convert-field"><label for="to-currency">To</label><select id="to-currency"><option>EUR</option><option>BDT</option><option>USD</option><option>GBP</option><option>CNY</option></select></div><div class="convert-field rate-field"><label for="rate">Rate (1 from = ? to)</label><input id="rate" type="number" min="0" step="0.000001" value="0.0073"></div><div class="convert-output"><span>Estimated converted amount</span><strong id="converted">€ 7.30</strong><small id="rate-note">Manual rate · verify before use</small><button id="fetch-rate" class="button secondary rate-refresh" type="button">↻ Fetch reference rate</button></div></div>
+    </section>
+
+
+    <section class="section" id="remittance-module">
+      <div class="section-heading"><div><div class="eyebrow">USD → BDT · SMART REMITTANCE</div><h2>Compare what your recipient gets</h2><p>Fetch a dated reference rate, then enter provider quotes to compare estimated recipient amounts. Nexora will not invent unavailable fees, rates, or delivery times.</p></div><span class="step-label">REMITTANCE</span></div>
+      <div class="panel remit-panel">
+        <div class="remit-controls">
+          <div class="field-row"><label for="remit-amount">Amount to send (USD)</label><input id="remit-amount" type="number" min="0.01" max="1000000" step="0.01" value="200"></div>
+          <button class="button secondary" id="remit-fetch-reference" type="button">↻ Fetch reference rate</button>
+        </div>
+        <div id="remit-reference" class="remit-reference" aria-live="polite">Reference rate not loaded yet. Fetch it to see the current published USD→BDT reference rate and timestamp.</div>
+        <div class="remit-table-wrap"><table class="remit-table">
+          <thead><tr><th>Provider / source</th><th>Offered rate (BDT per USD)</th><th>Fee (USD)</th><th>Delivery estimate</th></tr></thead>
+          <tbody>
+            <tr><th>Remitly</th><td><input id="remit-remitly-rate" type="number" min="0.000001" step="0.000001" placeholder="Enter quote"></td><td><input id="remit-remitly-fee" type="number" min="0" step="0.01" placeholder="Enter fee"></td><td><input id="remit-remitly-delivery" type="text" maxlength="120" placeholder="Not verified"></td></tr>
+            <tr><th>Wise</th><td><input id="remit-wise-rate" type="number" min="0.000001" step="0.000001" placeholder="Enter quote"></td><td><input id="remit-wise-fee" type="number" min="0" step="0.01" placeholder="Enter fee"></td><td><input id="remit-wise-delivery" type="text" maxlength="120" placeholder="Not verified"></td></tr>
+            <tr><th>Western Union</th><td><input id="remit-wu-rate" type="number" min="0.000001" step="0.000001" placeholder="Enter quote"></td><td><input id="remit-wu-fee" type="number" min="0" step="0.01" placeholder="Enter fee"></td><td><input id="remit-wu-delivery" type="text" maxlength="120" placeholder="Not verified"></td></tr>
+          </tbody>
+        </table></div>
+        <div class="remit-actions"><button class="button primary" id="remit-compare" type="button">Compare entered offers →</button><span>Provider-specific live quotes may depend on payment method, amount, recipient method, and promotions.</span></div>
+        <div id="remit-results" class="remit-results" aria-live="polite">No provider offers entered. Fetch the reference rate and check provider websites for a quote for your exact transfer.</div>
+        <div class="remit-sources"><strong>Provider quote pages:</strong> <a href="https://www.remitly.com/us/en/money-transfer/send-money-to-bangladesh" target="_blank" rel="noopener noreferrer">Remitly USD→BDT</a> · <a href="https://wise.com/us/compare/western-union-usd-to-bdt" target="_blank" rel="noopener noreferrer">Wise comparison</a> · <a href="https://www.westernunion.com/us/en/web/send-money/start" target="_blank" rel="noopener noreferrer">Western Union quote</a>. These links are for checking current offers; Nexora does not scrape or claim to verify their personalized quotes.</div>
+      </div>
+    </section>
+
+    <section class="section assistant-section" id="assistant">
+      <div class="section-heading"><div><div class="eyebrow">YOUR FINANCIAL STUDY BUDDY</div><h2><span data-i18n="assistantTitle">Ask Nexora</span></h2><p>Explore your budget, tuition planning, and cross-border student costs.</p></div><span class="step-label">03 / ASSISTANT</span></div>
+      <div class="assistant-layout"><div class="assistant-intro"><div class="assistant-orb">✦</div><h3><span data-i18n="assistantTagline">Good questions lead to clearer plans.</span></h3><p>Ask about your entered budget or how to organize study-abroad expenses. Nexora will show whether it's using demo guidance or a connected AI service.</p><div class="agent-capabilities"><span>01 · Understand</span><span>02 · Plan</span><span>03 · Explain</span></div>
+          <div class="safety-note" id="security-note"><span>ⓘ</span><p>Nexora is an educational prototype, not a bank or a licensed financial adviser. Verify exchange rates, transfer fees, and official university costs.</p></div></div>
+        <div class="chat-panel"><div class="chat-header"><div class="bot-avatar">N</div><div class="chat-title"><strong>Nexora assistant</strong><span id="assistant-status">Nexora agent · Demo mode until AI is configured</span></div><span class="online-dot"></span><button type="button" id="chat-toggle" class="chat-toggle" aria-label="Expand or collapse chat" title="Expand or collapse chat">⌃</button></div><div id="chat-messages" class="chat-messages" aria-live="polite"><div class="message assistant-message">Hi! I'm Nexora. Ask me about your budget, saving for tuition, or planning study-abroad expenses. I can use the numbers from your planner.</div></div><div class="suggestions"><button type="button" data-prompt="Can I afford my current monthly expenses?">Can I afford this budget?</button><button type="button" data-prompt="How should I plan for tuition and living costs?">Plan tuition costs</button><button type="button" data-prompt="What should I check before converting or transferring money?">Currency tips</button></div><form id="chat-form" class="chat-form"><textarea id="chat-input" maxlength="1000" rows="1" placeholder="Type a message…" autocomplete="off" required aria-label="Message Nexora"></textarea><button type="submit" aria-label="Send message">↑</button></form><div class="chat-foot">Don't enter passwords, bank details, passport numbers, or other sensitive information.</div></div>
+      </div>
+    </section>
+
+
+    <section class="section" id="agent-workflows">
+      <div class="section-heading"><div><div class="eyebrow">TASK COMPLETION WORKFLOWS</div><h2>Nexora can turn numbers into next steps.</h2><p>Run an explainable plan, compare a hypothetical transfer offer, and inspect sandbox-only execution evidence.</p></div><span class="step-label">04 / AGENT</span></div>
+      <div class="workflow-grid">
+        <article class="panel workflow-card">
+          <div class="panel-title"><span class="panel-icon">⌁</span><div><h3>Student budget action plan</h3><p>Uses the figures below, independently of the chat.</p></div></div>
+          <div class="field-row"><label for="agent-income">Available funds (same period)</label><input id="agent-income" type="number" min="0.01" step="0.01" value="45000"></div>
+          <div class="field-row"><label for="agent-tuition">Tuition allocation</label><input id="agent-tuition" type="number" min="0" step="0.01" value="10000"></div>
+          <div class="field-row"><label for="agent-living">Living costs</label><input id="agent-living" type="number" min="0" step="0.01" value="21000"></div>
+          <div class="field-row"><label for="agent-other">Other costs</label><input id="agent-other" type="number" min="0" step="0.01" value="1500"></div>
+          <button class="button primary full" id="run-agent-plan" type="button">Generate explainable plan →</button>
+          <pre id="agent-plan-result" class="workflow-result" aria-live="polite">Your plan will appear here with its calculation and recommendations.</pre>
+        </article>
+        <article class="panel workflow-card">
+          <div class="panel-title"><span class="panel-icon lavender">⇄</span><div><h3>Transfer estimate preview</h3><p>Enter a provider's offer to estimate a hypothetical receiving amount.</p></div></div>
+          <div class="field-row"><label for="transfer-amount">Amount sent</label><input id="transfer-amount" type="number" min="0.01" step="0.01" value="500"></div>
+          <div class="field-row"><label for="transfer-fee">Transfer fee in sending currency</label><input id="transfer-fee" type="number" min="0" step="0.01" value="5"></div>
+          <div class="field-row"><label for="transfer-rate">Provider's offered rate (entered by you)</label><input id="transfer-rate" type="number" min="0.000001" step="0.000001" value="120"></div>
+          <div class="field-row two-fields"><div><label for="transfer-base">Send currency</label><select id="transfer-base"><option>USD</option><option>EUR</option><option>GBP</option><option>BDT</option><option>CNY</option></select></div><div><label for="transfer-quote">Receive currency</label><select id="transfer-quote"><option>BDT</option><option>USD</option><option>EUR</option><option>GBP</option><option>CNY</option></select></div></div>
+          <button class="button secondary full" id="preview-transfer" type="button">Calculate estimate →</button>
+          <pre id="transfer-result" class="workflow-result" aria-live="polite">The estimated recipient amount will appear here.</pre>
+        </article>
+        <article class="panel workflow-card agent-transfer-card">
+          <div class="panel-title"><span class="panel-icon lavender">⇢</span><div><h3>AI agent transfer workflow</h3><p>Prepare → review → confirm. Each student would use their own authorized payment account in a future approved integration.</p></div></div>
+          <div class="sandbox-banner"><strong>Sandbox provider only</strong><span>No bank accounts are connected and no money can be sent from this demo.</span></div>
+          <div class="field-row"><label for="agent-recipient">Recipient name / nickname</label><input id="agent-recipient" maxlength="80" placeholder="e.g. Ana — rent share" autocomplete="off"></div>
+          <div class="field-row two-fields"><div><label for="agent-transfer-amount">Send amount</label><input id="agent-transfer-amount" type="number" min="0.01" step="0.01" value="50"></div><div><label for="agent-transfer-fee">Estimated fee</label><input id="agent-transfer-fee" type="number" min="0" step="0.01" value="1"></div></div>
+          <div class="field-row two-fields"><div><label for="agent-transfer-base">From currency</label><select id="agent-transfer-base"><option>EUR</option><option>USD</option><option>GBP</option><option>BDT</option><option>CNY</option></select></div><div><label for="agent-transfer-quote">To currency</label><select id="agent-transfer-quote"><option>BDT</option><option>EUR</option><option>USD</option><option>GBP</option><option>CNY</option></select></div></div>
+          <div class="field-row"><label for="agent-transfer-rate">Provider rate (demo input)</label><input id="agent-transfer-rate" type="number" min="0.000001" step="0.000001" value="128"></div>
+          <button class="button secondary full" id="prepare-agent-transfer" type="button">Prepare transfer for review →</button>
+          <pre id="agent-transfer-review" class="workflow-result" aria-live="polite">Fill in the recipient nickname and prepare a preview. No payment will be sent.</pre>
+          <label class="confirm-check"><input id="agent-transfer-confirm-check" type="checkbox" disabled> I reviewed the recipient, currencies, amount and fee. I understand this is a sandbox simulation only.</label>
+          <button class="button primary full" id="confirm-agent-transfer" type="button" disabled>Confirm sandbox simulation →</button>
+          <pre id="agent-transfer-status" class="workflow-result" aria-live="polite">Waiting for a transfer preview.</pre>
+          <p class="small-note">A real provider requires an approved business integration, per-student authentication/authorization, a provider quote, secure approval and verified transaction status. This prototype does not perform those steps.</p>
+        </article>
+        <article class="panel workflow-card">
+          <div class="panel-title"><span class="panel-icon">▣</span><div><h3>Sandbox operation evidence</h3><p>Shows permission-aware confirmation; never transfers money.</p></div></div>
+          <div class="field-row"><label for="sim-amount">Simulated amount</label><input id="sim-amount" type="number" min="0.01" step="0.01" value="100"></div>
+          <div class="field-row"><label for="sim-currency">Currency</label><select id="sim-currency"><option>BDT</option><option>USD</option><option>EUR</option><option>GBP</option><option>CNY</option></select></div>
+          <label class="confirm-check"><input id="sim-confirm" type="checkbox"> I understand this is a simulated action only; no money will be sent.</label>
+          <button class="button primary full" id="simulate-operation" type="button">Confirm simulated action →</button>
+          <button class="button secondary full" id="load-operation-log" type="button">View operation log</button>
+          <pre id="operation-result" class="workflow-result" aria-live="polite">No operation has been simulated in this session.</pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="remittance-module">
+      <div class="section-heading"><div><div class="eyebrow">CROSS-BORDER LIFE</div><h2>Global Remittance &amp; Events</h2><p>Plan important dates and compare an illustrative transfer before choosing a provider.</p></div><span class="step-label">MODULE 02</span></div>
+      <div class="feature-grid">
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">🎁</span><div><h3>Global Gift Hub</h3><p>Preview a gift transfer using a current reference exchange rate.</p></div></div><div class="field-row"><label for="gift-amount">Gift amount</label><input id="gift-amount" type="number" min="1" step="0.01" value="25"></div><div class="field-row two-fields"><div><label for="gift-from">Send currency</label><select id="gift-from"><option>USD</option><option>EUR</option><option>GBP</option><option>BDT</option><option>CNY</option></select></div><div><label for="gift-to">Receive currency</label><select id="gift-to"><option>BDT</option><option>USD</option><option>EUR</option><option>GBP</option><option>CNY</option></select></div></div><button class="button primary full" id="send-gift-preview" type="button">1-Click Send Gift Money · Preview</button><div id="gift-result" class="local-result" aria-live="polite">No gift transfer has been sent. This action only calculates an estimate.</div><div class="event-mini-calendar"><b>Upcoming global occasions</b><span>🕌 Eid · 🪔 Puja · 🎄 Christmas · 🎂 Birthdays</span><small>Add your own event dates in the reminder planner.</small></div></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">▦</span><div><h3>International date planner</h3><p>Add a deadline, tuition date or family occasion.</p></div></div><div class="field-row"><label for="event-title">Reminder title</label><input id="event-title" maxlength="80" placeholder="e.g. Tuition payment deadline"></div><div class="field-row"><label for="event-date">Date</label><input id="event-date" type="date"></div><button class="button primary full" id="add-event" type="button">Add reminder →</button><div id="event-list" class="local-list" aria-live="polite"><p class="empty-note">Your reminders will appear here. They stay in this page session.</p></div></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon teal">⇄</span><div><h3>Transfer safety checklist</h3><p>Before sending money with a licensed provider.</p></div></div><ul class="check-list"><li>Compare the provider's offered rate and all fees.</li><li>Confirm recipient details through a trusted channel.</li><li>Check delivery time, refund policy and support contacts.</li><li>Keep the receipt and never share passwords or OTPs.</li></ul><a class="text-link" href="#agent-workflows">Open transfer estimate ↗</a><p class="small-note">Nexora does not send money. The preview uses values you enter.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="compliance-module">
+      <div class="section-heading"><div><div class="eyebrow">SMART ANALYTICS</div><h2>Compliance &amp; Smart Analytics</h2><p>Spot budget pressure early and know what to verify with official sources.</p></div><span class="step-label">MODULE 03</span></div>
+      <div class="feature-grid">
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">⌁</span><div><h3>Spending health check</h3><p>Based on the amounts currently entered in your Wallet &amp; Cards planner.</p></div></div><div class="analytics-number" id="spending-health-value">—</div><div class="health-track"><span id="spending-health-fill"></span></div><p id="spending-health-message" class="health-message" aria-live="polite">Update your budget to calculate your spending ratio.</p><a class="text-link" href="#planner">Update budget figures ↗</a></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon teal">✓</span><div><h3>Tax &amp; visa preparation checklist</h3><p>Preparation support only — not a legal determination.</p></div></div><label class="check-row"><input type="checkbox"> Check official immigration guidance for your destination.</label><label class="check-row"><input type="checkbox"> Verify work-hour rules with the relevant government source.</label><label class="check-row"><input type="checkbox"> Confirm tax residency and filing obligations with an official tax authority or qualified adviser.</label><label class="check-row"><input type="checkbox"> Save links and note the date each rule was checked.</label><p class="small-note">Rules depend on country and personal circumstances. Nexora does not certify compliance.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="scholarship-discovery">
+      <div class="section-heading"><div><div class="eyebrow">STUDY ABROAD DISCOVERY</div><h2>Scholarships &amp; Universities</h2><p>Build targeted searches from your profile, then verify every detail on official sites.</p></div><span class="step-label">DISCOVERY</span></div>
+      <div class="feature-grid">
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon teal">✦</span><div><h3>Find scholarship opportunities</h3><p>Search links are tailored to your details; this prototype does not scrape or guarantee completeness.</p></div></div>
+          <label for="discovery-destination">Destination country / city</label><input id="discovery-destination" type="text" placeholder="e.g. Los Angeles, USA">
+          <label for="discovery-level">Study level</label><select id="discovery-level"><option value="">Choose level</option><option>Bachelor's</option><option>Master's</option><option>PhD / Doctoral</option><option>Exchange / short course</option></select>
+          <label for="discovery-subject">Subject / field</label><input id="discovery-subject" type="text" placeholder="e.g. Computer Science">
+          <label for="discovery-nationality">Citizenship / home country (optional)</label><input id="discovery-nationality" type="text" placeholder="e.g. Bangladesh">
+          <label for="discovery-region">Award type / other detail (optional)</label><input id="discovery-region" type="text" placeholder="e.g. merit-based, need-based">
+          <button class="button primary" id="find-scholarships" type="button">Find scholarship sources →</button>
+          <div class="local-result" id="scholarship-results" aria-live="polite">Enter your profile and search for relevant opportunities. A search result is not proof of eligibility or an award.</div>
+        </article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">⌂</span><div><h3>Discover universities</h3><p>Find official admissions and tuition information for your destination and subject.</p></div></div>
+          <label for="university-destination">Destination country / city</label><input id="university-destination" type="text" placeholder="e.g. Los Angeles, USA">
+          <label for="university-level">Study level</label><select id="university-level"><option value="">Choose level</option><option>Bachelor's</option><option>Master's</option><option>PhD / Doctoral</option><option>Exchange / short course</option></select>
+          <label for="university-subject">Subject / field</label><input id="university-subject" type="text" placeholder="e.g. Computer Science">
+          <button class="button primary" id="find-universities" type="button">Find university sources →</button>
+          <div class="local-result" id="university-results" aria-live="polite">Use official university pages to verify course availability, tuition, entry requirements and application deadlines.</div>
+          <p class="small-note">Funding tracker: only count a scholarship in your budget after you have actually received and confirmed the award. Potential scholarships are not guaranteed funds.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="mindspace-module">
+      <div class="section-heading"><div><div class="eyebrow">WELLBEING WITHOUT PRESSURE</div><h2>MindSpace</h2><p>A small check-in for the person behind the budget. Optional, not a diagnosis.</p></div><span class="step-label">MODULE 04</span></div>
+      <div class="feature-grid">
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">♡</span><div><h3>How are you feeling today?</h3><p>Your selection is not sent to the server or saved to an account.</p></div></div><div class="mood-options" role="group" aria-label="Choose today's mood"><button type="button" class="mood-button" data-mood="great"><span>☀</span><b>Happy</b></button><button type="button" class="mood-button" data-mood="stressed"><span>〰</span><b>Stressed</b></button><button type="button" class="mood-button" data-mood="low"><span>🌧</span><b>Depressed / Low</b></button></div><div id="mood-response" class="wellbeing-response" aria-live="polite">Choose a mood to get a gentle, practical suggestion.</div></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon teal">✿</span><div><h3>Reset in five minutes</h3><p>Pick one small activity — no productivity pressure.</p></div></div><ul class="check-list"><li>Take a short walk or stretch away from your screen.</li><li>Drink water and take five slow, comfortable breaths.</li><li>Message someone you trust or take a quiet break.</li><li>Explore your university's student support or local community events.</li></ul><p class="small-note">If you feel unsafe or overwhelmed, reach out to a trusted person or local professional support.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="academic-module">
+      <div class="section-heading"><div><div class="eyebrow">LEARNING &amp; OPPORTUNITY</div><h2>Academic Rewards</h2><p>Track your academic progress and prepare for opportunities without promising awards.</p></div><span class="step-label">MODULE 05</span></div>
+      <div class="feature-grid">
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">✦</span><div><h3>CGPA tracker</h3><p>Enter your current CGPA and your institution's maximum scale.</p></div></div><div class="field-row two-fields"><div><label for="cgpa-value">Your CGPA</label><input id="cgpa-value" type="number" min="0" step="0.01" max="10" placeholder="e.g. 3.65"></div><div><label for="cgpa-scale">Maximum scale</label><select id="cgpa-scale"><option value="4">4.00</option><option value="5">5.00</option><option value="10">10.00</option></select></div></div><button class="button primary full" id="calculate-cgpa" type="button">Calculate progress →</button><div id="cgpa-result" class="local-result" aria-live="polite">Your percentage of the selected scale will appear here.</div><p class="small-note">This is a simple ratio, not an official GPA conversion.</p></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">⇧</span><div><h3>Transcript upload (demo)</h3><p>Choose a transcript file and enter your GPA; this prototype does not verify documents.</p></div></div><div class="field-row"><label for="transcript-file">Transcript file</label><input id="transcript-file" type="file" accept=".pdf,.png,.jpg,.jpeg"></div><div class="field-row"><label for="transcript-gpa">Simulated verified GPA (4.00 scale)</label><input id="transcript-gpa" type="number" min="0" max="4" step="0.01" value="3.80"></div><button class="button primary full" id="check-reward" type="button">Check demo reward eligibility →</button><div id="reward-result" class="local-result" aria-live="polite">Upload a file and run the simulated check.</div><div id="reward-confetti" class="confetti-zone" aria-hidden="true"></div><p class="small-note">No OCR verification or real bank scholarship connection is implemented.</p></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon teal">◇</span><div><h3>Scholarship &amp; bank reward readiness</h3><p>Prepare your application; confirm actual criteria with the provider.</p></div></div><label class="check-row"><input type="checkbox"> Find an official scholarship or bank reward page.</label><label class="check-row"><input type="checkbox"> Confirm CGPA, residency and enrollment requirements.</label><label class="check-row"><input type="checkbox"> Check deadlines, required documents and privacy terms.</label><label class="check-row"><input type="checkbox"> Verify the organization before sharing documents.</label><p class="small-note">No bank partner, cash prize, account verification or eligibility decision is connected in this prototype.</p></article>
+      </div>
+    </section>
+
+
+    <section class="section" id="smart-mega-hub">
+      <div class="section-heading"><div><div class="eyebrow">STUDENT LIFE TOOLKIT</div><h2>Smart Mega Hub</h2><p>Small group savings, flight planning and an editable tax-preparation draft.</p></div><span class="step-label">MEGA HUB</span></div>
+      <div class="feature-grid">
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">📦</span><div><h3>Monthly Group Buying</h3><p>Estimate savings if students combine eligible purchases.</p></div></div><div class="field-row"><label for="group-spend">Your usual monthly spend ($)</label><input id="group-spend" type="number" min="0" value="80"></div><div class="field-row"><label for="group-discount">Illustrative group discount (%)</label><input id="group-discount" type="number" min="0" max="50" value="8"></div><div id="group-saving-result" class="local-result">Estimated savings will appear here.</div></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon teal">✈</span><div><h3>6-Month Flight Ticket Saver Lock</h3><p>Plan a savings target; no money is locked or moved.</p></div></div><div class="field-row"><label for="flight-target">Target ticket cost ($)</label><input id="flight-target" type="number" min="1" value="900"></div><div class="field-row"><label for="flight-saved">Already saved ($)</label><input id="flight-saved" type="number" min="0" value="150"></div><div id="flight-saving-result" class="local-result">Monthly saving target will appear here.</div></article>
+        <article class="panel feature-panel"><div class="panel-title"><span class="panel-icon lavender">▤</span><div><h3>International Tax Refund Form Draft</h3><p>Creates a blank planning worksheet, not an official tax filing.</p></div></div><div class="field-row"><label for="tax-country">Country / jurisdiction</label><input id="tax-country" maxlength="80" placeholder="Enter your study destination"></div><div class="field-row"><label for="tax-year">Tax year</label><input id="tax-year" maxlength="20" placeholder="e.g. 2026"></div><div class="field-row"><label for="tax-notes">Notes to verify with an official source</label><textarea id="tax-notes" rows="3" placeholder="Keep this general; don't enter tax IDs or sensitive data."></textarea></div><button class="button primary full" id="generate-tax-draft" type="button">Generate tax-preparation draft ↓</button><div id="tax-result" class="local-result" aria-live="polite">Your draft will be generated locally in your browser.</div></article>
+      </div>
+    </section>
+
+    <section class="final-cta"><div><div class="eyebrow">A MORE CONFIDENT START</div><h2>Your student journey is bigger than a number.</h2><p>Start with estimates, understand your choices, and verify important decisions with reliable sources.</p></div><a class="button light" href="#planner">Review my budget ↑</a></section>
+  </main>
+  <footer><span class="footer-name">NEXORA AI <small>│ Cross-Border Finance Agent</small></span><span>Student project prototype · Built for learning</span><span>Privacy &nbsp;&nbsp; Terms &nbsp;&nbsp; Help</span></footer>
+  <script src="{{ url_for('static', path='/script.js') }}"></script>
+  <script src="{{ url_for('static', path='/chat.js') }}"></script>
+</body>
+</html>
